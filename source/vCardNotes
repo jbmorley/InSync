@@ -1,0 +1,21 @@
+BEGIN:VCARD
+PROPERTYNAME[;PROPERTYPARAMETERS]:PROPERTYVALUE
+TEL;HOME:+1-919-555-1234
+END:VCARD
+
+N.B.
+; = ASCII 59
+Semi-colons within the property section must be delimited with a backslash.
+
+Inidividual lines are delimited with CRLF (13, 10)
+
+Multiple lines can be 'folded' (wrapped on to two lines) by CRLF followed by a LWSP-char (leading white space).
+Essentially these can be removed by doing a string replace of CRLFLWSP with LWSP.
+
+
+
+Study of the fields
+-------------------
+
+Name Field
+N:Family Name;
